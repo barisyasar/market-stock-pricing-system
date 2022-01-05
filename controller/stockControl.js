@@ -1,3 +1,4 @@
+// Stock General
 const tableStock = document.getElementById('tableStock');
 const stockSearch = document.getElementById('stockSearch');
 const stockSearchButton = document.getElementById('stockSearchButton');
@@ -31,10 +32,9 @@ for (let i = 0; i < stockList.length; i++) {
     </tr>
     `
 }
-
+// Filter table
 stockSearchButton.addEventListener('click', function () {
     const filterText = stockSearch.value;
-    console.log(filterText);
 
     tableStock.innerHTML = '';
 
@@ -55,3 +55,4 @@ stockSearchButton.addEventListener('click', function () {
         
     }
 })
+
