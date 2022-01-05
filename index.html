@@ -15,7 +15,7 @@
 <body>
   <div class="container-fluid">
     <!-- Login Section -->
-    <section id="login" class="d-none">
+    <section id="login" class="">
       <form id="loginForm">
         <img style="margin: auto; display: block;"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F296-2968496_supermarket-png-icon-super-market-transparent-png.png&f=1&nofb=1"
@@ -36,10 +36,10 @@
     <!-- Login Section End -->
 
     <!-- Super User -->
-    <section id="superuser" class="">
+    <section id="superuser" class="d-none">
       <div class="row mt-3 ">
         <h1 class="col-8">Super User</h1>
-      
+
         <!-- Register New User -->
         <div class="col-4 d-flex align-items-center justify-content-end mr-1">
           <button type="button" class="btn btn-primary">Register New User</button>
@@ -49,30 +49,81 @@
       <hr>
 
 
+      <!-- nav -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" name='stock'>Stock Control</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pinput" name='pinput'>Product Input</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#poutput" name='poutput'> Product Output</a>
+        </li>
+      </ul>
+      <!-- nav end-->
 
       <!-- Stock Control -->
-      <h3>Stock Control</h3>
+      <section name='sPage' class="current" id="stock">
+        <br>
+        <div class="row">
+          <h3 class="col-8 ">Stock Control Table</h3>
+          <!-- Search -->
+          <div class="col-4">
+            <div class="input-group">
+              <input id='stockSearch' type="text" class="form-control" placeholder="Filter Items">
+              <button class="btn btn-outline-secondary" type="button" id="stockSearchButton">🔍</button>
+            </div>
+          </div>
+          <!-- Search End -->
+        </div>
+        <br>
+
+        <!-- Stock Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Seller Name</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Price Per Product</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody id="tableStock">
+          </tbody>
+        </table>
+        <!-- Stock Table end -->
+
+      </section>
       <!-- Stock Control End -->
 
-      <!-- Product Input/Output -->
-      <div class="row">
-        <div class="col-sm">
-          Product Input
-        </div>
-        <div class="col-sm">
-          Product Output
-        </div>
-      </div>
-      <!-- Product Input/Output End -->
+      <!-- Product Input -->
+      <section name='sPage' class="d-none" id="pinput">
+        input
+      </section>
+      <!-- Product Input End-->
+
+      <!-- Product poutput -->
+      <section name='sPage' class="d-none" id="poutput">
+        output
+      </section>
+      <!-- Product poutput End-->
 
 
     </section>
     <!-- Super User End-->
 
   </div>
-
-
   <script src="./index.js"></script>
+  <script src="./super.js"></script>
+  <script src="./db/input.js"></script>
+  <script src="./db/output.js"></script>
+  <script src="./Product.js"></script>
+  <script src="./stockControl.js"></script>
+
+
 </body>
 
 </html>

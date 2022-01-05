@@ -1,8 +1,6 @@
 const login = document.querySelector('#login');
 const superUser = document.getElementById('superuser');
 
-
-
 function logIn() {
     const name = document.getElementById('loginName').value;
     const password = document.getElementById('Password').value;
