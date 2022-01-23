@@ -33,6 +33,7 @@ for (let i = 0; i < outputList.length; i++) {
     </tr>
     `
 }
+
 // Filter table
 outputSearchButton.addEventListener('click', function () {
     const filterText = outputSearch.value;
