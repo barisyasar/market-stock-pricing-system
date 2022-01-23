@@ -11,5 +11,8 @@ I tried to improve my moduler working in this app
  
 ## How to use
 1. Download this project to your computer.
-2. Open in any code editor.
-3. Start index.html
+<p align="left">
+  <img src="./images/login" width="350" title="hover text">
+</p>
+3. Open in any code editor.
+4. Start index.html
