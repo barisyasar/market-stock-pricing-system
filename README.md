@@ -10,6 +10,6 @@ I tried to improve my moduler working in this app
 - CRUD operations for products
  
 ## How to use
-1. Download this project to your computer.<br/> <img src="./images/login.png"  title="logipage">
+1. Download this project to your computer.<br/> <img src="./img/login.png" width='200' title="logipage">
 2. Open in any code editor.
 3. Start index.html
